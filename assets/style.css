@@ -242,7 +242,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #e5e5e5;
 }
 
 .clothes-type__list {
@@ -279,31 +279,32 @@ html {
   text-align: left;
 }
 
-.newwest-header {
+.section-header {
   font-size: 32px;
   line-height: 38px;
   color: #222;
   text-transform: uppercase;
   font-weight: 700;
 }
-.newwest-list {
+.section-list {
   display: flex;
   margin: 60px 0;
 }
 
-.newwest-item + .newwest-item {
+.clothes-newwest.section-item {
+  width: 25%;
+  height: 400px;
+}
+.section-item + .section-item {
   margin-left: 30px;
 }
 
-.newwest-item img {
-  width: 300px;
-  height: 400px;
+.section-item img {
+  width: 100%;
+  height: min-content;
 }
 
-.newwest-content {
-}
-
-.newwest-status {
+.section-status {
   margin: 5px 0;
   color: #999;
   font-size: 12px;
@@ -311,12 +312,12 @@ html {
   font-weight: 400;
 }
 
-.newwest-name {
+.section-name {
   margin: 5px 0;
   font-weight: 700;
 }
-.newwest-name,
-.newwest-prices {
+.section-name,
+.section-prices {
   color: #222;
   font-size: 16px;
   line-height: 24px;
@@ -403,4 +404,57 @@ html {
 
 .product-btn {
   margin-top: 60px;
+}
+
+/* SALES */
+.sales-percent {
+  color: #222;
+  text-align: center;
+  width: 630px;
+  margin-top: 60px;
+}
+.sales-percent-header {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.sales-percent-des {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.sales-percent-des:first-child {
+  width: 74px;
+  display: block;
+}
+
+.sale-percent-email {
+  margin: 30px 0;
+  display: flex;
+}
+
+.sale-percent-input {
+  padding: 11px 16px;
+  flex: 1;
+  font-size: 16px;
+  line-height: 24px;
+  outline: #666;
+  /* border-color: ; */
+  color: #666;
+}
+
+.sale-percent-join {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 15px 30px;
+  margin-left: 4px;
 }
