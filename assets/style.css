@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  outline: none;
+}
+html {
+  font-family: "Lato", sans-serif;
+}
+.section__container {
+  width: 1290px;
+}
+
+.mt-120 {
+  margin-top: 120px;
+}
+
+.header {
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 36px;
+}
+
+.header-item {
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #222;
+}
+
+.header-item.active {
+  color: #d33030;
+}
+
+.header-item__collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-icon {
+  font-size: 20px;
+}
+
+.header-cart {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 60px;
+  height: 50px;
+}
+
+.header-prices {
+  margin-right: 5px;
+}
+
+.header-cart-icon {
+  position: relative;
+  display: flex;
+}
+
+.header-cart-icon::after {
+  position: absolute;
+  content: "99";
+  right: -40%;
+  top: -30%;
+  background-color: #da291c;
+  border-radius: 50%;
+  padding: 2px;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  width: 11px;
+  height: 11px;
+}
+/* Slider */
+.slider {
+  background-image: url("./image/036f8004d0fa7ce0e17fbd6ffffbafdb.jfif");
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 680px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.slider-text__name {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.slider-text__greeting {
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 72px;
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+
+.slider-text__des {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  word-spacing: 1.6px;
+}
+
+.slider-slide {
+  display: flex;
+  margin-top: 120px;
+  /* opacity: 30%; */
+}
+
+.slider-person {
+  position: relative;
+  width: 410px;
+  height: 279px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-img__1 {
+  background-image: url("./image/img1jfif.jfif");
+}
+
+.slider-img__2 {
+  background-image: url("./image/img2.jfif");
+}
+
+.slider-img__3 {
+  background-image: url("./image/img3.jfif");
+}
+
+.slider-person + .slider-person {
+  margin-left: 30px;
+}
+
+.slider-person img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-person__content {
+  position: absolute;
+  bottom: 35px;
+  left: 24px;
+  color: #fff;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.slider-person__type {
+  display: inline-block;
+  background-color: #222;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.slider-person__name {
+  line-height: 30px;
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.btn-shop {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 4px 12px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-shop:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+/* CONTAINER */
+
+/* CLOTHES-TYPE */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.clothes-type__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 325px 325px;
+  grid-gap: 24px;
+}
+.clothes-type__item {
+  position: relative;
+}
+
+.clothes-type__name {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+.clothes-type__item:last-child {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.clothes-type__item:first-child {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+/* NEWEST ARRIVALS */
+.clothes-newwest {
+  text-align: left;
+}
+
+.newwest-header {
+  font-size: 32px;
+  line-height: 38px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.newwest-list {
+  display: flex;
+  margin: 60px 0;
+}
+
+.newwest-item + .newwest-item {
+  margin-left: 30px;
+}
+
+.newwest-item img {
+  width: 300px;
+  height: 400px;
+}
+
+.newwest-content {
+}
+
+.newwest-status {
+  margin: 5px 0;
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.newwest-name {
+  margin: 5px 0;
+  font-weight: 700;
+}
+.newwest-name,
+.newwest-prices {
+  color: #222;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.newwest-more {
+  display: flex;
+  /* margin-top: 60px; */
+  justify-content: center;
+}
+.newwest-more span {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  text-align: center;
+  color: #222;
+  border: 1px solid #222;
+  text-transform: uppercase;
+}
+
+/* BLACK IN BLACK */
+.product-special {
+  display: flex;
+  width: 100%;
+  height: 480px;
+}
+
+.product-special-img {
+  flex: 8;
+}
+
+.product-special-content {
+  padding: 80px;
+  background-color: #000;
+  flex: 10;
+  color: #fff;
+}
+
+.product-special-header {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+.product-special-des {
+  /* display: block; */
+  width: 536px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 12px 24px;
+  display: inline-block;
+}
+
+.product-collection {
+  position: relative;
+  height: 555px;
+}
+
+.product-collection-content {
+  position: absolute;
+  left: 120px;
+  bottom: 120px;
+  color: #fff;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.product-collection-day {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.product-collection-name {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.product-btn {
+  margin-top: 60px;
+}
