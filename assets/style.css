@@ -303,9 +303,33 @@ html {
   margin-left: 30px;
 }
 
+.newwest-item:hover .newwest-overley {
+  display: block;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.newwest-overley {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.add-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  padding: 12px 24px;
+  border: 1px solid #fff;
+}
+
 .section-item img {
   width: 100%;
-  height: min-content;
+  height: 400px;
 }
 
 .section-status {
@@ -340,6 +364,14 @@ html {
   color: #222;
   border: 1px solid #222;
   text-transform: uppercase;
+}
+
+.newwest-img {
+  position: relative;
+}
+
+.newwest-overley {
+  height: 400px;
 }
 
 /* BLACK IN BLACK */
